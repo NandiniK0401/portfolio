@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Author: Nandini Khokhani
+    Date: 20 Oct, 2023
+    Final Portfolio Project -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - WEBD5000</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <!-- google fonts added here -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bree+Serif&family=Poppins&family=Roboto+Slab&family=Unna&display=swap"
+        rel="stylesheet">
+    <!-- added source from fontawesome website -->    
+    <script src="https://kit.fontawesome.com/13498919e4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2><span>N</span>andini.</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Application Developer</p>
+                <h1>Hi, I'm <span>Nandini</span><br>Khokhani From Canada</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my web developer portfolio! I'm Nandini, a skilled and creative web developer with a
+                        passion for creating beautiful, responsive, and user-friendly websites. I've worked on a variety
+                        of web projects, ranging from personal blogs to e-commerce platforms.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('goals')">Goals</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="goals">
+                        <ul>
+                            <li><span>Short Term Goals:</span><br><br>&#10003; Get Co-Op/Internship before May'23 <br>&#10003; Get Certified from NSCC IT Campus <br>&#10003; Improve Soft Skills <br>&#10003; Debug a program or system <br><br></li>
+                            <li><span>Long Term Goals:</span><br><br>&#10003; Start a business <br>&#10003; Become an expert in a domain</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Present</span><br>Technical Customer Support at Blue Ocean Contact Centers
+                            </li>
+                            <li><span>2021 - 2022</span><br>Night Auditor/Duty Manager at Holiday Inn Express</li>
+                            <li><span>2019 - 2021</span><br>Customer Service Agent at Strategic Aviation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2024</span><br>Certificate in Full Stack Application Development</li>
+                            <li><span>2019-2021</span><br>Diploma in Business Administration</li>
+                            <li><span>2016-2018</span><br>High School Diploma in Business/Commerce</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skills Section -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML(HyperText Markup Language)</h2>
+                    <p>A coding language used to define parts
+                        of web pages or mobile apps to the web browsers that visit them.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS(Cascading Style Sheets)</h2>
+                    <p>An important coding language in terms of
+                        styling your web pages. It specifies your document's style - page layouts, colors, and
+                        fonts (shoutout to font-family and font-style!)</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>A programming language used popularly for developing web
+                        applications, dynamic user interfaces, and server-side applications. It is an essential
+                        skill for front-end, back-end, and full-stack developers.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="work">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from Play Store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="work">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from Play Store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="work">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from Play Store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> w0501872@campus.nscc.ca</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 1(902)-579-7629</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Nandini. Made with <i class="fa-solid fa-heart"></i> Love</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
